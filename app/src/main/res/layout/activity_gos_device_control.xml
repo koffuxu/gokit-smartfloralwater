@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fadingEdge="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="20dp"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+        
+		
+		<!-- ir_detect(布尔只读) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="ir_detect" />
+
+				<Switch
+					android:id="@+id/sw_bool_ir_detect"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:textOff="关闭"
+					android:textOn="开启" />
+					
+		</RelativeLayout>	
+	
+		
+		<!-- swith(布尔可写) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="swith" />
+
+				<Switch
+					android:id="@+id/sw_bool_swith"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:textOff="关闭"
+					android:textOn="开启" />
+					
+		</RelativeLayout>	
+	
+		
+		<!-- vol_liquid(数值只读) -->
+		 <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:background="@color/white"
+				android:padding="10dp" >
+		 
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_centerVertical="true"
+					android:text="vol_liquid" />
+
+				<TextView
+					android:id="@+id/tv_data_vol_liquid"
+					android:layout_width="110dp"
+					android:layout_height="match_parent"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:gravity="end"
+					android:textSize="16sp"
+					android:textColor="@color/gray" />	
+		</RelativeLayout>
+	
+	
+    </LinearLayout>
+
+</ScrollView>
